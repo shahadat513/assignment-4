@@ -12,5 +12,5 @@ function calculateFinalScore(obj) {
         return false;
 }
 
-const value = { name: "Rajib", testScore: 45,  schoolGrade: 25, isFFamily : true };
+const value = { name: "Rajib", testScore: 15,  schoolGrade: 25, isFFamily : true  } ;
 console.log(calculateFinalScore(value));

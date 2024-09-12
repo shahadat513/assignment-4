@@ -8,5 +8,5 @@ function sendNotification(email) {
     return (first + ' sent you an email from ' + last);
 }
 
-const mail = sendNotification('shahadat513@gmail.com');
+const mail = sendNotification('fahim234.hotmail.com');
 console.log(mail);

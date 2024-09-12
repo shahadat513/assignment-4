@@ -1,10 +1,10 @@
 function waitingTime(waitingTimes, serialNumber) {
-    if (!Array.isArray(waitingTimes) && typeof serialNumber !== 'number') {
+    if (!Array.isArray(waitingTimes) || typeof serialNumber !== 'number') {
         return "Invalid Input"
     }
     let averageTime = 0;
 
-    for (const num of waitingTimes) {
+    for (let num of waitingTimes) {
         averageTime = averageTime + num / waitingTimes.length;
     }
 
@@ -15,5 +15,5 @@ function waitingTime(waitingTimes, serialNumber) {
 
 }
 
-let previous = waitingTime([ 3, 5, 7, 11, 6 ], 10);
+let previous = waitingTime([13, 2], 6);
 console.log(previous);

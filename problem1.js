@@ -7,6 +7,6 @@ function calculateTax(income, expenses) {
     const incomeTax = saving * .20;
     return incomeTax;
 }
-console.log(calculateTax(5000, 1593));
+console.log(calculateTax(6000, -1500));
 
 

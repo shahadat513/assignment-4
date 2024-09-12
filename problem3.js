@@ -4,7 +4,6 @@ function checkDigitsInName(name) {
     }
     for (let i = 0; i < name.length; i++) {
         const element = name[i];
-        console.log(element);
         if(element >='0' && element <= '9'){
             return true;
         }
@@ -12,5 +11,5 @@ function checkDigitsInName(name) {
     return false;
 }
 
-let num = checkDigitsInName('Name2024');
+let num = checkDigitsInName('!@#');
 console.log(num);
