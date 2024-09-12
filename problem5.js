@@ -1,13 +1,17 @@
 function waitingTime(waitingTimes, serialNumber) {
-    if (!Array.isArray(waitingTimes) && typeof serialNumber !== 'number'){
+    if (!Array.isArray(waitingTimes) && typeof serialNumber !== 'number') {
         return "Invalid Input"
     }
-    for (let i = 0; i < waitingTimes.length; i++) {
-        let element = waitingTimes[i];
-        element = element++
-        console.log(element);
-        
+    let averageTime = 0;
+
+    for (const num of waitingTimes) {
+        averageTime = averageTime + num / waitingTimes.length;
     }
+
+    let serial = (serialNumber - 1) - waitingTimes.length;
+
+    let serialTime = serial * Math.round(averageTime);
+    return serialTime;
 
 }
 
